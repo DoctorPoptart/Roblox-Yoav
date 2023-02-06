@@ -1,0 +1,46 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="ModuleScript" referent="RBX2130687167D646728F7DF7BAB067BCA2">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">ModuleScript</string>
+			<string name="ScriptGuid">{41F31F18-48A9-4583-BFE5-53FBFFB332EB}</string>
+			<ProtectedString name="Source"><![CDATA[local module = {}
+
+local Values = require(script.Values)
+local messages = Values.messages
+
+function module:SendMessage(callback)
+	callback(messages[math.random(#messages)])
+end
+
+return module
+]]></ProtectedString>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+		<Item class="ModuleScript" referent="RBX43D1C08145C342C18846FFAF7824B550">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Values</string>
+				<string name="ScriptGuid">{8FD69849-FD13-4E91-B507-74555A739953}</string>
+				<ProtectedString name="Source"><![CDATA[local module = {}
+
+module.messages = {
+	"Hello!",
+	"Hi :3",
+	"How are you?"
+}
+
+return module
+]]></ProtectedString>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>
